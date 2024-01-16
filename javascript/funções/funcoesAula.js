@@ -1,9 +1,9 @@
 
-function calcularImc (peso,altura){
+function calcularImc (peso,altura){ // função que calcula o IMC
     return peso / Math.pow(altura,2)
 }
 
-function condicoesImc (imc){
+function condicoesImc (imc){ // função que aplica as condicionais
     if (imc < 18.5){
         return `Abaixo do peso - IMC: ${imc} `
     }else if (imc >= 18.5 && imc <25){
@@ -17,7 +17,7 @@ function condicoesImc (imc){
     }
 }
 
-function main () {    
+function main () {     // Função principal conteno as variáveis
     const peso = 90
     const altura = 1.7
     const imc = calcularImc(peso,altura)
